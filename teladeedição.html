@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="teladeedição.css">
+</head>
+<body>
+    <header>
+        <h1>Obras do Governo</h1>
+    </header>
+    <div class="form-add-obra">
+        <h2>Adicionar Nova Obra</h2>
+        <label for="addImage">URL da Imagem:</label>
+        <input type="text" id="addImage">
+        <label for="addTitle">Título:</label>
+        <input type="text" id="addTitle">
+        <label for="addDescription">Descrição:</label>
+        <input type="text" id="addDescription">
+        <label for="addLocation">Local:</label>
+        <input type="text" id="addLocation">
+        <button id="addButton">Adicionar</button>
+    </div>
+
+    <div class="obras">
+        <div class="obra">
+            <img src="imagem1.jpg" alt="Obra 1">
+            <h2>Nome da Obra 1</h2>
+            <p>Descrição da Obra 1.</p>
+            <p>Local: Cidade, Estado</p>
+            <button class="edit">editar</button>
+        </div>
+    </div>
+
+    <!-- Modal para edição -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Editar Obra</h2>
+            <label for="editImage">URL da Imagem:</label>
+            <input type="text" id="editImage">
+            <label for="editTitle">Título:</label>
+            <input type="text" id="editTitle">
+            <label for="editDescription">Descrição:</label>
+            <input type="text" id="editDescription">
+            <label for="editLocation">Local:</label>
+            <input type="text" id="editLocation">
+            <button id="saveButton">Salvar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

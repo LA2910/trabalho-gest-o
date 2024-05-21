@@ -1,0 +1,37 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #363636;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+}
+.obras {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+.obra {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.obra img {
+    width: 100%;
+    border-radius: 5px;
+}
+.obra h2 {
+    margin-top: 5px;
+}
+.obra p {
+    margin: 5px 0;
+}
